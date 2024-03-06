@@ -1,0 +1,34 @@
+
+		fflush(stdin);
+		cout << "\nTiep tuc ? (c/k):";
+		cin >> c;
+	} while ((c == 'c') || (c == 'C'));
+}
+
+void chuyen(int n, char a, char b, char c)
+{
+	if (n == 1) cout << "\nLan chuyen " << ++d << " : Tu " << a << " sang " << b;
+	else
+	{
+		chuyen(n - 1, a, c, b);
+		chuyen(1, a, b, c);
+		fflush(stdin);
+		cout << "\nTiep tuc ? (c/k):";
+		cin >> c;
+	} while ((c == 'c') || (c == 'C'));
+}
+
+void chuyen(int n, char a, char b, char c)
+{
+	if (n == 1) cout << "\nLan chuyen " << ++d << " : Tu " << a << " sang " << b;
+	else
+	{
+		chuyen(n - 1, a, c, b);
+		chuyen(1, a, b, c);
+		chuyen(n - 1, c, b, a);
+	}
+}
+Bài tập C++ số 4
+	}
+}
+Bài tập C++ số 4
